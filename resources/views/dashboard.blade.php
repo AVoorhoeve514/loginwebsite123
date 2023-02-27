@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +8,7 @@
 </head>
 <body>
 <div class="topnavbar">
-    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="/pictures/samurai.png"
+    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="./img/samurai.png"
                                                                                  width="50px";
                                                                                  height="55px";
                                                                                  border-top-left-radius: 0%;></a>
@@ -21,7 +20,7 @@
         <li><a href="./faq"><strong>FAQ</strong></a></li>
         <li><a href="./blog"><strong>Blog</strong></a></li>
         <marquee  behavior="scroll" direction="left">
-            <img src="/pictures/glitchlogo"
+            <img src="./img/glitchlogo"
                  alt="hz logo"
                  width: 50px;
                  height: 55px;
