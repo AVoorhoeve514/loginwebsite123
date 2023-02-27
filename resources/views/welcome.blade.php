@@ -1,48 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
-    <meta http-equiv="X-UA-Compatible"
-          content="ie=edge"
-    >
-    <title>{{ env('APP_NAME') }}</title>
-    {{-- Load the default generated javascript and stylesheets --}}
-    @vite([ 'resources/js/app.js', 'resources/sass/app.scss' ])
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-<nav class="navbar is-primary  has-text-white" >
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                {{-- Use the APP_NAME setting from the .env file --}}
-                <strong>{{ env('APP_NAME') }}</strong>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="/posts/my-first-post">My first post</a>
-                <a class="navbar-item" href="/posts/my-second-post">My second post</a>
-            </div>
-        </div>
+<div class="topnavbar">
+    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="./img/samurai.png"
+                                                                                 width="50px";
+                                                                                 height="55px";
+                                                                                 border-top-left-radius: 0%;></a>
     </div>
+    <nav>
+        <li><a href="welcome.blade.php"><strong>Home</strong></a></li>
+        <li><a href="profile.blade.php"><strong>Profile</strong></a></li>
+        <li><a href="dashboard.blade.php"><strong>Dashboard</strong></a></li>
+        <li><a href="FAQ.blade.php"><strong>FAQ</strong></a></li>
+        <li><a href="blog.html"><strong>Blog</strong></a></li>
+        <marquee  behavior="scroll" direction="left">
+            <img src="./img/glitchlogo"
+                 alt="hz logo"
+                 width: 50px;
+                 height: 55px;
+                 border-top-left-radius: 0%;>
+        </marquee>
+    </nav>
+</div>
+<nav class="sidenav">
+    <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" target="_blank">HZ course and examination regulations</a>
+    <br><br>
+    <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2020-2021/9.-Implementation-Regulations-ICT-Fulltime-2020-2021.pdf" target="_blank">Implementation Regulations HBO-ICT</a>
+    <br><br>
+    <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
+    <br><br>
+    <a href="https://teams.microsoft.com/_?culture=nl-nl&amp;country=NL&amp;lm=deeplink&amp;lmsrc=homePageWeb&amp;cmpid=WebSignIn#/school/conversations/Algemeen?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&amp;ctx=channel" target="_blank">Teams environment</a>
+    <br><br>
+    <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">Study progress</a>
+    <br><br>
+    <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
+    <br>
 </nav>
-
-<section class="section">
-    <div class="container">
-        <div class="content">
-            <h1>Welcome to my portfolio</h1>
-        </div>
+<div class="container">
+    <div class="modal">
+        <br><br>
+        <h1>Alwyn Voorhoeve's Portfolio website</h1>
+        <p>Ik ben Alwyn en ik ben student op de <a href="https://hz.nl/">HZ University of Applied Sciences</a> in Middelburg. Dit is de Homepagina van mijn portfoliowebsite</p>
+        <img src="/pictures/hz-university-of-applied-sciences-logo-png-transparent.png" alt="hz logo met tekst" width="300px">
+        <p>Ik heb deze opleiding gekozen omdat ik erg van videogames hou en ik later een game designer wil worden.
+            Dat zou veel makkelijker worden als ik al ervaring heb met programmeren en Software engineering.
+            Na deze opleiding wil ik misschien ook nog een game design opleiding volgen.
+            Dat was niet mijn eerste keus was omdat ik nog geen ervaring heb met programmeren en coderen en omdat er bij dat soort opleidingen vaak maar weinig mensen per jaar binnengelaten worden.</p>
+        <p><a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies">Hier</a> vind je de opleiding die ik waarschijnlijk ga volgen nadat ik mijn diploma heb.</p>
+        <img src="/pictures/jimcarreytyping.gif" alt="me when code">
+        <p>Tot nu toe heb ik het erg naar mijn zin op deze opleiding en ben ik overtuigd dat ik een goede studiekeuze heb gemaakt. Ik heb vaak last van uitselgedrag en word vaak afgeleid van dingen als ik ze niet interresant vind, maar dat heb ik bij deze opleiding niet. De stof is lastig, maar het lukt bijna altijd om eruit te komen. En ik hou ook zelf wel van een uitdaging.</p>
+        <h3>Waarom is ICT de juiste opleiding voor mij?</h3>
+        <ul>-Ik vind het leuk om met computers te werken</ul>
+        <ul>-Ik heb ervaring nodig met programmeren als ik ooit een gamedesigner wil worden</ul>
+        <ul>-Ik hou van games spelen en ik wil meer leren over hoe ze gemaakt worden.</ul>
     </div>
-</section>
-
-
+</div>
 </body>
 </html>
