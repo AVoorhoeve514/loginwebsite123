@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FAQController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +35,14 @@ Route::get('/posts/{post}',  function($post){
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [WelcomeController::class, 'show']);
+Route::get('/profile', [ProfileController::class, 'show']);
+Route::get('/dashboard', [DashboardController::class, 'show']);
+Route::get('/faq', [FAQController::class, 'show']);
+
+Route::get('/blog', [BlogController::class, 'index']);
+Route::post('/blog', [BlogController::class, 'store']);
+Route::get('/blog/create', [BlogController::class, 'create']);
+Route::get('/blog/{article}', [BlogController::class, 'show']);
+Route::get('/blog/{article}/edit', [BlogController::class, 'edit']);

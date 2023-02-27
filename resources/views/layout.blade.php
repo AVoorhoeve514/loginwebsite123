@@ -7,9 +7,9 @@
     <title>portfolio website</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
+
 <div class="topnavbar">
-    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="/pictures/samurai.png"
+    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="./img/samurai.png"
                                                                                  width="50px";
                                                                                  height="55px";
                                                                                  border-top-left-radius: 0%;></a>
@@ -21,7 +21,7 @@
         <li><a href="./faq"><strong>FAQ</strong></a></li>
         <li><a href="./blog"><strong>Blog</strong></a></li>
         <marquee  behavior="scroll" direction="left">
-            <img src="/pictures/glitchlogo"
+            <img src="./img/glitchlogo"
                  alt="hz logo"
                  width: 50px;
                  height: 55px;
@@ -43,38 +43,8 @@
     <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
     <br>
 </nav>
-<div class="container">
-    <div class="modal">
-        <br><br>
-        <h1>Profile</h1>
-        <main>
-            <section>
-                <h2>Wie ben ik?</h2>
-                <p>Mijn naam is Alwyn Voorhoeve en ik ben 17 jaar oud.</p>
-                <p>Ik woon in Middelburg met mijn ouders, broertje en twee katten.</p>
-                <p>Mijn hobbies zijn gamen en tekenen.</p>
-                <p>Ik ga ook naar de sportschool Fit For Free</p>
-                <img src="/pictures/scooterpic" alt="catpic1" height="340px"> <img src="/pictures/annabelpic" alt="catpic2" height="340px">
-                <p>Ik teken al bijna mijn hele leven en ik heb zelfs een striptekencursus gevolgd toen ik 9 was.</p>
-                <p>Ik doe het niet heel vaak meer omdat ik er tegenwoordig niet zo veel tijd meer voor heb.</p>
-                <br>
-                <p>Videogames maken eigenlijk al mijn hele leven deel uit van mijn dagelijkse routine.</p>
-                <p>Toen ik 7 jaar oud was had mijn vader een nintendo 64 geleend van een collega waar de game banjo-kazooie op stond, en dat is hoe ik aan ze ben geintroduceerd.</p>
-                <div class="banjokazooieimg">
-                    <img src="/pictures/banjokazooiecover.png" alt="banjokazooiecover">
-                    <h4>Mijn favoriete games zijn:</h4>
-                    <ul>-Bloodborne</ul>
-                    <ul>-The Witcher 3</ul>
-                    <ul>-Uncharted 2</ul>
-                    <ul>-Metal Gear Rising</ul>
-                    <ul>-Overwatch</ul>
-            </section>
-            <section>
-                <h3></h3>
-            </section>
-        </main>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+<body>
+@yield('content')
 </body>
 </html>

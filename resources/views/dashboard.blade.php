@@ -15,11 +15,11 @@
                                                                                  border-top-left-radius: 0%;></a>
     </div>
     <nav>
-        <li><a href="home.html"><strong>Home</strong></a></li>
-        <li><a href="profile.html"><strong>Profile</strong></a></li>
-        <li><a href="dashboard.html"><strong>Dashboard</strong></a></li>
-        <li><a href="./resources/views/FAQ.blade.php"><strong>FAQ</strong></a></li>
-        <li><a href="blog.html"><strong>Blog</strong></a></li>
+        <li><a href="./"><strong>Home</strong></a></li>
+        <li><a href="./profile"><strong>Profile</strong></a></li>
+        <li><a href="./dashboard"><strong>Dashboard</strong></a></li>
+        <li><a href="./faq"><strong>FAQ</strong></a></li>
+        <li><a href="./blog"><strong>Blog</strong></a></li>
         <marquee  behavior="scroll" direction="left">
             <img src="/pictures/glitchlogo"
                  alt="hz logo"
