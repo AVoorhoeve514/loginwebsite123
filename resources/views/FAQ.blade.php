@@ -56,6 +56,9 @@
     <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
     <br>
 </nav>
+<div class='popup'>
+    <span class='popuptext' id='popup'>hi</span>
+    </div>
 <div class="container">
     <div class="modal">
         <br><br>
@@ -105,5 +108,6 @@
         <br>
     </div>
 </div>
+<script src="./JS/breakingbad.js" defer></script>
 </body>
 </html>

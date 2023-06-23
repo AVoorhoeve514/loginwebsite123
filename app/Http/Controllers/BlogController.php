@@ -10,46 +10,48 @@ class BlogController extends Controller
     public function index()
     {
         $articles = Article::all();
-        return View('blog')->with('articles', $articles);
+        return view()('blog')->with('article', $articles);
     }
-    public function show()
+    public function show(Article $article)
     {
-        $articles = Article::all();
-        return View('blog')->with('articles', $articles);
+        return view('article.show', compact('article'));
     }
 
     public function create()
     {
-        return View('create');
+        return view('article.create');
     }
 
-    public function store(){
-        request()->validate([
-            'title' => 'required',
-            'content' => 'required'
-        ]);
-        $article = new Article();
-        $article->title = request('title');
-        $article->content = request('content');
-
-        $article->save();
-        return redirect('/blog');
+    public function store(Request $request){
+        Article::create($this->validateArticle($request));
+        return redirect(route('blog'));
     }
 
-    public function edit($id)
+    public function edit(Article $article)
     {
-        $article = Article::find($id);
-        return view('edit', ['blog' => $article]);
+        return view('article.edit', compact('article'));
     }
 
-    public function update($id)
+    public function update(Request $request, Article $article)
     {
-        $article = Article::find($id);
-        $article->title = request('title');
-        $article->content = request('content');
-        $article->save();
+        $article->update($this->validateArticle($request));
 
-        return redirect('/blog' . $article->id);
+        return redirect()->route('blog.show', $article);
     }
     //
+
+    public function destroy(Article $article) {
+        $article->delete();
+
+        return redirect()->route('blog');
+    }
+
+    private function validateArticle(Request $request)
+    {
+        return $request->validate([
+            'name'=> 'required',
+            'title'=> 'required',
+            'description'=>'required'
+        ]);
+    }
 }

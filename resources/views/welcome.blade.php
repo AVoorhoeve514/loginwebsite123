@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-<div class="topnavbar">
-    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="./img/samurai.png"
-                                                                                 width="50px";
-                                                                                 height="55px";
-                                                                                 border-top-left-radius: 0%;></a>
+<div class="py-12">
+    <div class="logo">
+        <name="" id="btnajax" class="btn btn-primary" role="button"
+                onclick="change_message()">
+        <img src="./img/walterswagger.jpg"
+                width="50px";
+                height="55px";
+        border-top-left-radius: 0%;>
     </div>
     <nav>
-        <li><a href="./"><strong>Home</strong></a></li>
+        <li><a href="./"><strong>Dashboard</strong></a></li>
         <li><a href="./profile"><strong>Profile</strong></a></li>
         <li><a href="./dashboard"><strong>Dashboard</strong></a></li>
         <li><a href="./faq"><strong>FAQ</strong></a></li>
@@ -43,11 +46,17 @@
     <a href="https://github.com/HZ-HBO-ICT" target="_blank">Github environment</a>
     <br>
 </nav>
+<div class='popup'>
+    <span class='popuptext' id='popup'>hi</span>
+    <style>
+
+    </style>
+    </div>
 <div class="container">
     <div class="modal">
         <br><br>
         <h1>Alwyn Voorhoeve's Portfolio website</h1>
-        <p>Ik ben Alwyn en ik ben student op de <a href="https://hz.nl/">HZ University of Applied Sciences</a> in Middelburg. Dit is de Homepagina van mijn portfoliowebsite</p>
+        <p>Ik ben Alwyn en ik ben student op de <a href="https://hz.nl/">HZ University of Applied Sciences</a> in Middelburg. Dit is de Dashboardpagina van mijn portfoliowebsite</p>
         <img src="./img/hz-university-of-applied-sciences-logo-png-transparent.png" alt="hz logo met tekst" width="300px">
         <p>Ik heb deze opleiding gekozen omdat ik erg van videogames hou en ik later een game designer wil worden.
             Dat zou veel makkelijker worden als ik al ervaring heb met programmeren en Software engineering.
@@ -62,5 +71,14 @@
         <ul>-Ik hou van games spelen en ik wil meer leren over hoe ze gemaakt worden.</ul>
     </div>
 </div>
+</div>
+<form method="POST" action="{{ route('logout') }}">
+    @csrf
+    <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+        {{ __('Log Out') }}
+    </x-dropdown-link>
+</form>
+<script src="./JS/breakingbad.js" defer></script>
 </body>
 </html>

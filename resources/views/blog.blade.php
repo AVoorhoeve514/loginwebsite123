@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-<div class="topnavbar">
-    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="./img/samurai.png"
-                                                                                 width="50px";
-                                                                                 height="55px";
-                                                                                 border-top-left-radius: 0%;></a>
+<div class="py-12">
+    <div class="logo">
+        <name="" id="btnajax" class="btn btn-primary" role="button"
+                onclick="change_message()">
+        <img src="./img/walterswagger.jpg"
+                width="50px";
+                height="55px";
+        border-top-left-radius: 0%;>
     </div>
     <nav>
         <li><a href="./"><strong>Home</strong></a></li>
@@ -60,5 +63,6 @@
             <p>Geen posts gevonden...</p>
         </article>
     </div>
+    <script src="./JS/breakingbad.js" defer></script>
 @endforelse
 @endsection

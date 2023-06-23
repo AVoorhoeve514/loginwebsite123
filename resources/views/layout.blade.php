@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
-<div class="topnavbar">
-    <div class="logo"><a href="https://www.youtube.com/watch?v=OjNpRbNdR7E"><img src="./img/samurai.png"
-                                                                                 width="50px";
-                                                                                 height="55px";
-                                                                                 border-top-left-radius: 0%;></a>
+<div class="py-12">
+    <div class="logo">
+        <name="" id="btnajax" class="btn btn-primary" role="button"
+                onclick="change_message()">
+        <img src="./img/walterswagger.jpg"
+                width="50px";
+                height="55px";
+        border-top-left-radius: 0%;>
     </div>
     <nav>
         <li><a href="./"><strong>Home</strong></a></li>
@@ -28,6 +31,9 @@
                  border-top-left-radius: 0%;>
         </marquee>
     </nav>
+    <div class='popup'>
+    <span class='popuptext' id='popup'>hi</span>
+    </div>
 </div>
 <nav class="sidenav">
     <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" target="_blank">HZ course and examination regulations</a>
@@ -46,5 +52,6 @@
 
 <body>
 @yield('content')
+<script src="./JS/breakingbad.js" defer></script>
 </body>
 </html>
